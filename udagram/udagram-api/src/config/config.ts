@@ -7,11 +7,11 @@ dotenv.config();
 // Are Also needed
 
 export const config = {
-  username: `${process.env.POSTGRES_USERNAME}`,
-  password: process.env.POSTGRES_PASSWORD,
-  database: process.env.POSTGRES_DB,
-  port: Number(process.env.PORT),
-  host: process.env.POSTGRES_HOST,
+  username: `${process.env.RDS_USERNAME}`,
+  password: process.env.RDS_PASSWORD,
+  database: process.env.RDS_DB_NAME,
+  port: Number(process.env.RDS_PORT),
+  host: process.env.RDS_HOSTNAME,
   dialect: "postgres",
   aws_region: process.env.AWS_REGION,
   aws_profile: process.env.AWS_PROFILE,
