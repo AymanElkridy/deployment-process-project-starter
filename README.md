@@ -51,7 +51,7 @@
 
 ## URL
 
-Click [Here](http://udagram-frontend-bucket-1337.s3-website-us-east-1.amazonaws.com/home) to go to the hosted website.
+Click [Here](http://udagram-frontend-bucket-1337.s3-website-us-east-1.amazonaws.com/) to go to the hosted website.
 
 <hr>
 
