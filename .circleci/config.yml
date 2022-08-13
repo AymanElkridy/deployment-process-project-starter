@@ -55,16 +55,16 @@ jobs:
       - eb/setup
       - aws-cli/setup
       - checkout
-      # Deploy the fontend app
-      - run:
-          name: Front-End Deploy
-          command: |
-            npm run frontend:deploy
       # Deploy the backend api
       - run:
           name: API Deploy
           command: |
             npm run api:deploy
+      # Deploy the fontend app
+      - run:
+          name: Front-End Deploy
+          command: |
+            npm run frontend:deploy
             
 workflows:
   udagram:
