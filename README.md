@@ -49,6 +49,10 @@
     - sequelize
     - sequelize-typescript
 
+## URL
+
+Click [Here](http://udagram-frontend-bucket-1337.s3-website-us-east-1.amazonaws.com/home) to go to the hosted website.
+
 <hr>
 
 # What comes next is the pre-provided part of the readme file
