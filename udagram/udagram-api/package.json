@@ -13,7 +13,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && cd www && eb init udagram-api --platform Node.js --region us-east-1 && eb deploy udagram-api-env && npm run addsecrets",
-    "addsecrets":"eb setenv AWS_BUCKET=$AWS_BUCKET",
+    "addsecrets":"eb setenv AWS_BUCKET=$AWS_BUCKET && eb setenv AWS_PROFILE=$AWS_PROFILE && eb setenv AWS_REGION=$AWS_REGION && eb setenv JWT_SECRET=$JWT_SECRET && eb setenv PORT=$PORT && eb setenv RDS_DB_NAME=$RDS_DB_NAME && eb setenv RDS_HOSTNAME=$RDS_HOSTNAME && eb setenv RDS_PASSWORD=$RDS_PASSWORD && eb setenv RDS_PORT=$RDS_PORT && eb setenv RDS_USERNAME=$RDS_USERNAME && eb setenv URL=$URL",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
