@@ -47,6 +47,12 @@
     - sequelize
     - sequelize-typescript
 
+## Pipeline process
+1. The project is pushed to it's GitHub branch.
+2. CircleCi is triggered and a new workflow starts.
+3. The workflow installs, builds & deploys the updated project.
+4. The updated project is now hosted on our dedicated services (AWS).
+
 ## URL
 Click [Here](http://udagram-frontend-bucket-1337.s3-website-us-east-1.amazonaws.com/) to go to the hosted website.
 Or copy and paste this link:
