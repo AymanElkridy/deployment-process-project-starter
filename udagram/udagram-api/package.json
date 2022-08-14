@@ -13,6 +13,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && cd www && eb init udagram-api --platform Node.js --region us-east-1 && eb deploy udagram-api-env",
+    "addsecrets":"eb setenv AWS_BUCKET=$AWS_BUCKET",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
